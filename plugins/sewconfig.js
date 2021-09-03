@@ -16,7 +16,7 @@ const Raviya = require('../config');
 const {spawnSync} = require('child_process');
 const fs = require('fs');
      
-const SEWARR = "Sew Queen session එක 👇"
+const SEWARR = "Thilina Bot session එක 👇"
 const SEWBRR = Raviya.SESSION
 const SEWAARR = "Heruku Api Key Eka👇"
 const SEWABR = Raviya.API_KEY
@@ -43,7 +43,7 @@ const SEWFRR = Raviya.ALIMG
 const SEWWRR = "හදන විදිය තියෙන යූටියුබ් ලින්ක් එක"
 const SEWXRR = "https://youtu.be/AKU7YVXxMbM"
 const SEWCRR = "බොට් සෑදීම සදහා යා යුතු ලින්ක් එක"
-const SEWDRR = "https://github.com/Sew01RaviduManoj01KingAndQueen/QueenSew.git"
+const SEWDRR = "https://github.com/Thilina30599/whatsnewbot.git"
 
 QueenSew.newcmdaddtosew({pattern: 'configlist', fromMe: true, disc: 'බොට්ව සෑදීමේදී ඔබ විසින් දමා ඇති දත්ත ලබා ගත හැක . your config details.' }, (async (message, match) => {
       await message.client.sendMessage(message.jid,'hear is your all config 😉', MessageType.text);
