@@ -1,14 +1,14 @@
 {
     "name": "ThilinaBot",
     "description": "ThilinaBot - Makes it easy and fun to use Whatsapp. World’s first UserBot made for WhatsApp.",
-    "logo": "https://i.ibb.co/JkjKGTy/temp-user-profile1621662133773.jpg",
+    "logo": "https://telegra.ph/file/febe5fafe800433d3f3a2.jpg",
     "keywords": ["whatsapp", "userbot", "sew", "sewqueen", "bot", "api", "ai"],
     "repository": "",
     "website":   "https://t.me/thilauna",
-    "success_url": "https://t.me/AsenaSupport",
+    "success_url": "https://chat.whatsapp.com/94772789984",
     "stack": "container",
     "env": {
-        "_SEW_QUEEN_SESSION": {
+        "_Thilina_Bot_SESSION": {
             "description": "Type here yours Thilina_Bot Session.QR කෝඩය ස්කෑන් කර ලබා ගන්නා කේතය ඇතුලත් කරන්න",
             "required": true
         },
@@ -34,7 +34,7 @@
         "AUTO_BİO": {
             "description": "Set true for auto date, time in biography.",
             "required": true,
-            "value": "false"
+            "value": "true"
         },
         "HANDLERS": {
             "description": "For commands.",
