@@ -305,7 +305,7 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
         asynchronous_ch()
         await new Promise(r => setTimeout(r, 200));
         let rssewqueengg = Raviya.WORKTYPE == 'public' ? ' Public' : ' Private'
-        console.log(chalk.bgGreen('⛄ Sew Queen is' + rssewqueengg + ' ⛄'));
+        console.log(chalk.bgGreen('⛄ ThilinaBot is' + rssewqueengg + ' ⛄'));
         await new Promise(r => setTimeout(r, 500));
         if (CdSew.user.jid == one || CdSew.user.jid == two || CdSew.user.jid == three || CdSew.user.jid == four || CdSew.user.jid == five || CdSew.user.jid == six || CdSew.user.jid == seven || CdSew.user.jid == eight) {
             await CdSew.sendMessage(CdSew.user.jid,nw, MessageType.text), console.log(nw), await new Promise(r => setTimeout(r, 1000))
@@ -377,7 +377,7 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
             if (gb !== false) {
                 var sewqueenimage = await axios.get(Raviya.WLP, { responseType: 'arraybuffer' })
-                await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'});
+                await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ THILINA BOT'});
             }
             return;
         } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
@@ -385,7 +385,7 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
             var gb = await getMessage(msg.key.remoteJid);
             if (gb !== false) {
             var sewqueenimage = await axios.get(Raviya.GDB, { responseType: 'arraybuffer' })
-            await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'});
+            await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ THILINA BOT'});
             }
             return;
         }
@@ -396,7 +396,7 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
             if (gb !== false) {
                 var sewqueenimage = await axios.get(Raviya.WLP, { responseType: 'arraybuffer' })
-                await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.image, { caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'});
+                await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.image, { caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ THILINA BOT'});
             }
             return;
         } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
@@ -404,7 +404,7 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
             var gb = await getMessage(msg.key.remoteJid);
             if (gb !== false) {
             var sewqueenimage = await axios.get(Raviya.GDB, { responseType: 'arraybuffer' })
-            await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.image, { caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'});
+            await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.image, { caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ THILINA BOT'});
             }
             return;
         }
