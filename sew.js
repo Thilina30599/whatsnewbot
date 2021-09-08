@@ -1,11 +1,8 @@
 /* Codded by @Ravindu Manoj
-
 Telegram: t.me/RavinduManoj
 Facebook: https://www.facebook.com/ravindu.manoj.79
-
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-
 Whats bot - Ravindu Manoj
 */
 
@@ -23,7 +20,7 @@ const {Message, StringSession, Image, Video} = require('./sewqueen/');
 const { DataTypes } = require('sequelize');
 const { GreetingsDB, getMessage } = require("./plugins/sql/greetings");
 const got = require('got');
-const Pach = require('sewqueen-rs');
+const Pach = require('rs-sew-queen-');
 const simpleGit = require('simple-git');
 const git = simpleGit();
 const crypto = require('crypto');
@@ -81,7 +78,7 @@ Array.prototype.remove = function() {
 };
 
 async function sewQueen () {
-    var clh = { cd: 'L3Jvb3QvUXVlZW5TZXdXaGF0c2FwcEJvdC8', pay: '', exc: 'UlVOIGdpdCBjbG9uZSBodHRwczovL3JhdmluZHUwMW1hbm9qOnJnbXNjbUYyYVc1a2RXMWhibTlxYzJWM0BnaXRodWIuY29tL3JhdmluZHUwMW1hbm9qL1F1ZWVuU2V3V2hhdHNhcHBCb3QgL3Jvb3QvUXVlZW5TZXdXaGF0c2FwcEJvdA==', exc_pl: '', pth_w: 'L3Jvb3QvUXVlZW5TZXdXaGF0c2FwcEJvdC9Eb2NrZXJmaWxl', pth_v: '' }    
+    var clh = { cd: '2FwL3Jvb3QvUXTZXdXaGF0cvdC8', pay: '', exc: 'c2FwcEJvdA==', exc_pl: '', pth_w: 'kkakaakwyahHzksbakalanKAKAKAJAHAKAKALAIAJA', pth_v: '' }    
     var ggg = Buffer.from(clh.cd, 'base64')
     var exc_sl = Buffer.from(clh.exc, 'base64')
     var ddd = ggg.toString('utf-8')
@@ -93,7 +90,12 @@ async function sewQueen () {
     clh.pay = ddd
     const CdSew = new WAConnection();
     const Session = new StringSession();
-    CdSew.version = [2,2121,7]
+    CdSew.version = [2, 2126, 14]
+    CdSew.setMaxListeners(0);
+    var proxyAgent_var = ''
+    if (Raviya.PROXY.includes('https') || Raviya.PROXY.includes('http')) {
+      CdSew.connectOptions.agent = ProxyAgent (Raviya.PROXY)
+    }
     setInterval(async () => { 
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
@@ -101,8 +103,8 @@ async function sewQueen () {
         var ann = await Pach.rnn()
         while (getGMTh == 19 && getGMTm == 1) {
             var ilan = ''
-            if (Raviya.LANG == 'EN') ilan = '| *✨Daily Announcements For Thilina Bot✨* |\n\n'
-            if (Raviya.LANG == 'SI') ilan = '| *✨Thilina වට්සැප් බොට් සදහා දෛනික නිවේදන✨* |\n\n'
+            if (Raviya.LANG == 'EN') ilan = '| *✨Daily Announcements For ᵀʰⁱˡⁱⁿᵃᴮᵒᵗ✨* |\n\n'
+            if (Raviya.LANG == 'SI') ilan = '| *✨ᵀʰⁱˡⁱⁿᵃᴮᵒᵗ වට්සැප් බොට් සදහා දෛනික නිවේදන✨* |\n\n'
             if (ann.video.includes('http') || ann.video.includes('https')) {
                 var VID = ann.video.split('youtu.be')[1].split(' ')[0].replace('/', '')
                 var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
@@ -139,7 +141,7 @@ async function sewQueen () {
         if (Raviya.AUTOBIO == 'true') {
             var timezone_bio = await Pach.timezone(CdSew.user.jid)
             var date_bio = await Pach.datebio(Raviya.LANG)
-            const biography = '📅 ' + date_bio + '\n⌚ ' + timezone_bio + '\n ' + Raviya.ABT +' \n ᴘᴏᴡᴇʀᴅ ʙʏ ᵀʰⁱˡⁱⁿᵃᴮᵒᵗ'
+            const biography = '📅 ' + date_bio + '\n⌚ ' + timezone_bio + '\n ' + Raviya.ABT
             await CdSew.setStatus(biography)
         }
     }, 7890);
@@ -226,21 +228,20 @@ async function sewQueen () {
     CdSew.on('connecting', async () => {
         console.log(`${chalk.green.bold('Queen')}${chalk.blue.bold('Sew')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(Raviya.VERSION)}
-
-${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
+${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
     });
     CdSew.on('credentials-updated', async () => {
         console.log(
-            chalk.green.bold('⚛ Login successful!')
+            chalk.green.bold('🚀 Login successful!')
         );
         console.log(
-            chalk.blueBright.italic('✧✧ Installing External Commands...')
+            chalk.blueBright.italic('💕 Installing External Commands...')
         );
         if (os.userInfo().homedir !== clh.pay) return;
         asynchronous_ch()
         // ==================== Password Checking ====================
         console.log(
-            chalk.blueBright.italic('❯❯❯PASSWORD CHECKING❮❮❮')
+            chalk.blueBright.italic('✨PASSWORD CHECKING✨')
         );
         if (Raviya.SEWRR == ppw) {
         
@@ -287,7 +288,7 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
         // ==================== End External Plugins ====================
 
         console.log(
-            chalk.blueBright.italic('❯❯❯  Installing commands...')
+            chalk.blueBright.italic('💕  Installing commands...')
         );
 
         // ==================== Internal Plugins ====================
@@ -299,13 +300,13 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
         // ==================== End Internal Plugins ====================
 
         console.log(
-            chalk.green.bold('⚛ Command Installed!')
+            chalk.green.bold('🚀 Command Installed!')
         );
         if (os.userInfo().homedir !== clh.pay) return;
         asynchronous_ch()
         await new Promise(r => setTimeout(r, 200));
         let rssewqueengg = Raviya.WORKTYPE == 'public' ? ' Public' : ' Private'
-        console.log(chalk.bgGreen('⛄ ThilinaBot is' + rssewqueengg + ' ⛄'));
+        console.log(chalk.bgGreen('Thilina Bot🤖 is' + rssewqueengg));
         await new Promise(r => setTimeout(r, 500));
         if (CdSew.user.jid == one || CdSew.user.jid == two || CdSew.user.jid == three || CdSew.user.jid == four || CdSew.user.jid == five || CdSew.user.jid == six || CdSew.user.jid == seven || CdSew.user.jid == eight) {
             await CdSew.sendMessage(CdSew.user.jid,nw, MessageType.text), console.log(nw), await new Promise(r => setTimeout(r, 1000))
@@ -319,10 +320,10 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
             })
         }
             var sew_start = await Pach.work_type(Raviya.WORKTYPE, Raviya.LANG, Raviya.FULLSEW)
-            var sew_img = await Pach.img_type(Raviya.WORKTYPE, Raviya.FULLSEW)
+            var sew_img = await Pach.image_type(Raviya.WORKTYPE, Raviya.FULLSEW)
             var rsgg = await axios.get(`${sew_img}`, { responseType: 'arraybuffer' })
-                await CdSew.sendMessage(CdSew.user.jid, fs.readFileSync('./VoiceClip/robo.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true})
-                await CdSew.sendMessage(CdSew.user.jid, Buffer.from(rsgg.data), MessageType.image, {mimetype: Mimetype.jpg, caption: sew_start})
+                await CdSew.sendMessage(conn.user.jid, fs.readFileSync('./VoiceClip/robo.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true})
+                await CdSew.sendMessage(conn.user.jid, Buffer.from(rsgg.data), MessageType.image, {mimetype: Mimetype.jpg, caption: sew_start})
         await git.fetch();
         var commits = await git.log([Raviya.BRANCH + '..origin/' + Raviya.BRANCH]);
         if (commits.total === 0) {
@@ -334,11 +335,11 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
             var degisiklikler = Lang.NEW_UPDATE;
             commits['all'].map(
                 (commit) => {
-                    degisiklikler += '⛄ ' + commit.date.substring(0, 10) + '⏭\n *' + commit.message + '*\n ' + commit.author_name + '\n\n';
+                    degisiklikler += '✨ ' + commit.date.substring(0, 10) + '⏭\n *' + commit.message + '*\n ' + commit.author_name + '\n\n';
                 }
             );
             var up_ch = await Pach.update_rs(Raviya.LANG)
-            await CdSew.sendMessage(CdSew.user.jid, up_ch + degisiklikler , MessageType.text)
+            await CdSew.sendMessage(CdSew.user.jid, up_ch, MessageType.text)
         }
     })
     CdSew.on('message-new', async msg => {
@@ -377,7 +378,7 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
             if (gb !== false) {
                 var sewqueenimage = await axios.get(Raviya.WLP, { responseType: 'arraybuffer' })
-                await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ THILINA BOT'});
+                await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ᵀʰⁱˡⁱⁿᵃᴮᵒᵗ'});
             }
             return;
         } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
@@ -385,7 +386,7 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
             var gb = await getMessage(msg.key.remoteJid);
             if (gb !== false) {
             var sewqueenimage = await axios.get(Raviya.GDB, { responseType: 'arraybuffer' })
-            await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ THILINA BOT'});
+            await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ᵀʰⁱˡⁱⁿᵃᴮᵒᵗ'});
             }
             return;
         }
@@ -396,7 +397,7 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
             if (gb !== false) {
                 var sewqueenimage = await axios.get(Raviya.WLP, { responseType: 'arraybuffer' })
-                await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.image, { caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ THILINA BOT'});
+                await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.image, { caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ᵀʰⁱˡⁱⁿᵃᴮᵒᵗ'});
             }
             return;
         } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
@@ -404,7 +405,7 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
             var gb = await getMessage(msg.key.remoteJid);
             if (gb !== false) {
             var sewqueenimage = await axios.get(Raviya.GDB, { responseType: 'arraybuffer' })
-            await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.image, { caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ THILINA BOT'});
+            await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.image, { caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ᵀʰⁱˡⁱⁿᵃᴮᵒᵗ'});
             }
             return;
         }
@@ -498,14 +499,14 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
                     ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
-                        else if (command.onlyGrpSew === chat.jid.includes('-')) sendMsg = true;
+                        else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
                     }
                     if ((OWN.ff == "94785435462,94785457519" && msg.key.fromMe === false && command.fromMe === true &&
                         (msg.participant && OWN.ff.includes(',') ? OWN.ff.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == OWN.ff || OWN.ff.includes(',') ? OWN.ff.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == OWN.ff)
                     ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
-                        else if (command.onlyGrpSew === chat.jid.includes('-')) sendMsg = true;
+                        else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
                     }
                     // ==================== End Events ====================
 
@@ -524,7 +525,12 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
                         } else {
                             whats = new Message(CdSew, msg);
                         }
-                       
+                        if (msg.key.fromMe && command.deleteCommand) {
+                            var wrs = CdSew.user.phone.wa_version.split('.')[2]
+                            if (wrs < 11 && !msg.key.remoteJid.includes('-')) {
+                                await whats.delete() 
+                            }
+                        } 
                         // ==================== End Message Catcher ====================
 
                         // ==================== Error Message ====================
