@@ -16,7 +16,26 @@ if (Config.WORKTYPE == 'private') {
    QueenSew.newcmdaddtosew({pattern: 'nova', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
       await message.sendMessage('💗 *NOVA LAUNCHER* 💗\npremium unlocked .\n📌 bit.ly/drknova');
    }));
-
+   QueenSew.newcmdaddtosew({pattern: 'pixlab', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
+    await message.sendMessage('💗 *Pixellab* 💗\npremium unlocked .\n📌 https://bit.ly/2WNZz2T');
+   }));
+   
+   QueenSew.newcmdaddtosew({pattern: 'srishare', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
+    await message.sendMessage('💗 *Sri Share* 💗\nSpeed File Transfering App developed in Srilanka .\n📌 https://bit.ly/3h3Wza2');
+   }));
+   
+   QueenSew.newcmdaddtosew({pattern: 'bndicm', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
+    await message.sendMessage('💗 *Bandicam Lifetime free Activate* 💗\nFor Pcs And Laptops .\n📌 https://bit.ly/3BHdRle');
+   }));
+   
+   QueenSew.newcmdaddtosew({pattern: 'lubox', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
+    await message.sendMessage('💗 *LuluBox Game Modifier 💗\nPlay mod games .\n📌 https://bit.ly/3DM4uCx');
+   }))
+   
+   QueenSew.newcmdaddtosew({pattern: 'and12', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
+    await message.sendMessage('💗 *Android 12 icons pack* 💗\nFor Pcs And Laptops .\n📌 https://bit.ly/38CRwsf');
+   }))
+ 
    QueenSew.newcmdaddtosew({pattern: 'cml', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
       await message.sendMessage('💗 *CM LAUNCHER* 💗\npremium unlocked.\n😞 No disponible en este momento.');
    }));
@@ -160,7 +179,26 @@ else if (Config.WORKTYPE == 'public') {
    QueenSew.newcmdaddtosew({pattern: 'nova', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
       await message.sendMessage('💗 *NOVA LAUNCHER* 💗\npremium unlocked.\n📌 bit.ly/drknova');
    }));
-
+   QueenSew.newcmdaddtosew({pattern: 'pixlab', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
+    await message.sendMessage('💗 *Pixellab* 💗\npremium unlocked .\n📌 https://bit.ly/2WNZz2T');
+   })); 
+ 
+   QueenSew.newcmdaddtosew({pattern: 'srishare', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
+    await message.sendMessage('💗 *Sri Share* 💗\nSpeed File Transfering App developed in Srilanka .\n📌 https://bit.ly/3h3Wza2');
+   }));
+ 
+    QueenSew.newcmdaddtosew({pattern: 'bndicm', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
+    await message.sendMessage('💗 *Bandicam Lifetime free Activate* 💗\nFor Pcs And Laptops .\n📌 https://bit.ly/3BHdRle');
+   }));
+ 
+   QueenSew.newcmdaddtosew({pattern: 'lubox', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
+    await message.sendMessage('💗 *LuluBox Game Modifier 💗\nPlay mod games .\n📌 https://bit.ly/3DM4uCx');
+   }))
+ 
+   QueenSew.newcmdaddtosew({pattern: 'and12', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
+    await message.sendMessage('💗 *Android 12 icons pack* 💗\nFor Pcs And Laptops .\n📌 https://bit.ly/38CRwsf');
+   }))
+ 
    QueenSew.newcmdaddtosew({pattern: 'cml', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
       await message.sendMessage('💗 *CM LAUNCHER* 💗\npremium unlocked.\n😞 No disponible en este momento.');
    }));
