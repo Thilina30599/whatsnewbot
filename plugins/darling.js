@@ -9,7 +9,7 @@ you may not use this file except in compliance with the License.
 Whats bot - Ravindu Manoj
 */
 const QueenSew = require('../events');
-const SEW = "*ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ*\n ඔබේ පෙම්වතිය හෝ පෙම්වතා වෙත සොදුරු ඇමතුමක්.\n💻Usage: *.msglv*"
+const SEW = "*ᴘᴏᴡᴇʀᴅ ʙʏ Thilina Bot*\n ඔබේ පෙම්වතිය හෝ පෙම්වතා වෙත සොදුරු ඇමතුමක්.\n💻Usage: *.msglv*"
 const fs = require('fs')
 const {MessageType, Mimetype } = require('@adiwajshing/baileys');
 const Config = require('../config')
