@@ -32,11 +32,11 @@ QueenSew.newcmdaddtosew({ pattern: 'insta ?(.*)', fromMe: false, desc: IG_DESC},
         const msg = `${type}`
 
 	 if (msg === 'image') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-          caption: "*Coded By t.me/RavinduManoj*"
+          caption: "*Coded By t.me/thilauna*"
         })}
 		 	 
 	if (msg === 'video') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
-          caption: "*Coded By t.me/RavinduManoj*"
+          caption: "*Coded By t.me/thilauna*"
         })}
 	
         
@@ -71,7 +71,7 @@ QueenSew.newcmdaddtosew({ pattern: 'fb ?(.*)', fromMe: false, desc: FBDESC }, as
         const msg = `*${CAPTION}*: ${judul}`
 
         await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
-          caption: "*Coded By t.me/RavinduManoj*"
+          caption: "*Coded By t.me/thilauna*"
         })
       })
       .catch(
