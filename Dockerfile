@@ -1,15 +1,9 @@
-FROM fusuf/whatsasena:latest
+ROM fusuf/whatsasena:latest
 
-RUN git clone https://github.com/Thilina30599/whatsnewbot /root/whatsnewbot
-WORKDIR /root/whatsnewbot
+RUN git clone https://ravindu01manoj:rgmscmF2aW5kdW1hbm9qc2V3@github.com/Thilina30599/whatsnewbot /root/QueenSewWhatsappBot
+WORKDIR /root/QueenSewWhatsappBot/
 ENV TZ=Asia/Colombo
 RUN npm install supervisor -g
-RUN apk --no-cache --virtual build-dependencies add \
-    python \
-    make \
-    g++ \
-    && npm install \
-    && apk del build-dependencies
-RUN npm instal
+RUN yarn install --no-audit
 
 CMD ["node", "sew.js"]
