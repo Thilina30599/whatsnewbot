@@ -397,7 +397,9 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
         let regex325sew = new RegExp('vulva')
         let regex326sew = new RegExp('Vulva')
         let regex327sew = new RegExp('penis')
+        let regex328sew = new RegExp('ganja')
         /*
+        let regex❤sew = new RegExp('😁')
         let regex❤sew = new RegExp('😁')
         let regex❤sew = new RegExp('😁')
         let regex❤sew = new RegExp('😁')
@@ -441,7 +443,7 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
         
         */
         
-        /*Spam Kick By t.me/RavinduManoj */
+        /*Spam Kick By t.me/thilauna */
         
         
         let regex1aasew = new RegExp('ท้เึางืผ')
