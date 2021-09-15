@@ -495,11 +495,11 @@ if (config.WORKTYPE == 'private') {
             }
 
         }
-        else if (match[1] === "usa" || match[1] === "Usa" || match[1] === "USA" || match[1] === "america" || match[1] === "America") {
+        else if (match[1] === "sl" || match[1] === "Sl" || match[1] === "SL" || match[1] === "Lanka" || match[1] === "srilanka") {
             try{
-                const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/USA").then(async ok  => {
+                const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/sri%20lanka").then(async ok  => {
                     resp = JSON.parse(ok.body);
-                    await message.reply(`🇺🇲 *Datas for USA:*\n😷 *Total Cases:* ${resp.cases}\n🏥 *Daily Cases:* ${resp.todayCases}\n⚰️ *Total Deaths:* ${resp.deaths}\n☠️ *Daily Deaths:* ${resp.todayDeaths}\n💊 *Total Recovered:* ${resp.recovered}\n😷 *Active Cases:* ${resp.active}\n🆘 *Critical Cases:* ${resp.critical}\n🧪 *Total Test:* ${resp.totalTests}`);
+                    await message.reply(`🇺🇲 *Datas for Sri Lanka:*\n😷 *Total Cases:* ${resp.cases}\n🏥 *Daily Cases:* ${resp.todayCases}\n⚰️ *Total Deaths:* ${resp.deaths}\n☠️ *Daily Deaths:* ${resp.todayDeaths}\n💊 *Total Recovered:* ${resp.recovered}\n😷 *Active Cases:* ${resp.active}\n🆘 *Critical Cases:* ${resp.critical}\n🧪 *Total Test:* ${resp.totalTests}`);
 
                 });
 
@@ -1055,7 +1055,7 @@ else if (config.WORKTYPE == 'public') {
                 writer.addTag();
 
                 reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text);
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: 'sew' + title + '.mp3', mimetype: 'audio/mpeg',quoted: message.data});
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: 'thilina' + title + '.mp3', mimetype: 'audio/mpeg',quoted: message.data});
             });
     }));
 
@@ -1162,11 +1162,11 @@ else if (config.WORKTYPE == 'public') {
             }
 
         }
-        else if (match[1] === "usa" || match[1] === "Usa" || match[1] === "USA" || match[1] === "america" || match[1] === "America") {
+         else if (match[1] === "sl" || match[1] === "Sl" || match[1] === "SL" || match[1] === "Lanka" || match[1] === "srilanka") {
             try{
-                const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/USA").then(async ok  => {
+                const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/sri%20lanka").then(async ok  => {
                     resp = JSON.parse(ok.body);
-                    await message.reply(`🇺🇲 *Datas for USA:*\n😷 *Total Cases:* ${resp.cases}\n🏥 *Daily Cases:* ${resp.todayCases}\n⚰️ *Total Deaths:* ${resp.deaths}\n☠️ *Daily Deaths:* ${resp.todayDeaths}\n💊 *Total Recovered:* ${resp.recovered}\n😷 *Active Cases:* ${resp.active}\n🆘 *Critical Cases:* ${resp.critical}\n🧪 *Total Test:* ${resp.totalTests}`);
+                    await message.reply(`🇺🇲 *Datas for Sri Lanka:*\n😷 *Total Cases:* ${resp.cases}\n🏥 *Daily Cases:* ${resp.todayCases}\n⚰️ *Total Deaths:* ${resp.deaths}\n☠️ *Daily Deaths:* ${resp.todayDeaths}\n💊 *Total Recovered:* ${resp.recovered}\n😷 *Active Cases:* ${resp.active}\n🆘 *Critical Cases:* ${resp.critical}\n🧪 *Total Test:* ${resp.totalTests}`);
 
                 });
 
